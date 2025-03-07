@@ -1,0 +1,41 @@
+.builder-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    width: 200px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  .component-list {
+    min-height: 100px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .draggable {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    cursor: grab;
+  }
+  
+  .canvas {
+    flex: 1;
+    min-height: 300px;
+    padding: 20px;
+    background: #e8e8e8;
+    border-radius: 8px;
+  }
+  
+  .dropped-item {
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  

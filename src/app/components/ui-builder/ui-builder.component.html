@@ -1,0 +1,18 @@
+<div class="builder-container">
+    <!-- Sidebar with draggable components -->
+    <div class="sidebar">
+      <h3>Components</h3>
+      <div cdkDropList [cdkDropListData]="availableComponents" class="component-list">
+        <div *ngFor="let item of availableComponents" cdkDrag class="draggable">
+          {{ item.name }}
+        </div>
+      </div>
+    </div>
+  
+    <!-- Drop area -->
+    <div cdkDropList class="canvas" [cdkDropListData]="droppedComponents" (cdkDropListDropped)="drop($event)">
+      <h3>Drop Components Here</h3>
+      <div *ngFor="let component of droppedComponents" [innerHTML]="component.code" class="dropped-item"></div>
+    </div>
+  </div>
+  
